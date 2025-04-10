@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar: React.FC = () => {
@@ -15,24 +16,15 @@ const Navbar: React.FC = () => {
             </div>
             <div className="w-full flex flex-col items-center lg:flex-row lg:justify-center lg:w-auto">
                 <div className="text-lg">
-                    <a
-                        href="/"
-                        className="inline-flex mt-4 lg:mt-0 text-gray-400 hover:text-white mr-4"
-                    >
+                    <Link href={'/'} className="inline-flex mt-4 lg:mt-0 text-gray-400 hover:text-white mr-4">
                         Home
-                    </a>
-                    <a
-                        href="resume"
-                        className="inline-flex mt-4 lg:mt-0 text-gray-400 hover:text-white mr-4"
-                    >
+                    </Link>
+                    <Link href={'resume'} className="inline-flex mt-4 lg:mt-0 text-gray-400 hover:text-white mr-4">
                         Resume
-                    </a>
-                    <a
-                        href="projects"
-                        className="inline-flex mt-4 text-gray-400 hover:text-white"
-                    >
+                    </Link>
+                    <Link href={'projects'} className="inline-flex mt-4 text-gray-400 hover:text-white">
                         Projects
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>

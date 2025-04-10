@@ -33,7 +33,9 @@ export default function RootLayout({
         <meta name="description" content="A personal portfolio website" />
       </Head>
       <body>
-        <Layout children={children} geistSans={geistSans} geistMono={geistMono} />
+        <Layout geistSans={geistSans} geistMono={geistMono}>
+          {children}
+        </Layout>
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React, { FC, ReactNode } from 'react';
 
 import Footer from './footer';
